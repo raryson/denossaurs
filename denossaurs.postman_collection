@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "d2b1667d-d46a-4943-aa4d-5896a865879b",
+		"name": "Denossaurs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1435824"
+	},
+	"item": [
+		{
+			"name": "Create Dino",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dinossaurs\": {\r\n        \"name\": \"Tiranosauro\",\r\n        \"description\": \"Come tudo\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dinossaurs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dinossaurs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all Dinos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dinossaurs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dinossaurs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
